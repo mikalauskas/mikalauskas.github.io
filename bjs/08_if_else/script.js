@@ -84,7 +84,7 @@ document.getElementById('btnLess').addEventListener('click', function () {
             guessRandom = Math.round(Math.random()*3);
             (guessRandom === 0) ? guessPhrase = `Вы загадали число ${answerNumWord}?`: 
             (guessRandom === 1) ? guessPhrase = `Я уверен, это ${answerNumWord}?`: 
-            (guessRandom === 1) ? guessPhrase = `Я знаю! Это ${answerNumWord}?!`:
+            (guessRandom === 2) ? guessPhrase = `Я знаю! Это ${answerNumWord}?!`:
             guessPhrase = `Я думаю, это ${answerNumWord}?`;
             answerField.innerText = guessPhrase;
         }
@@ -110,7 +110,7 @@ document.getElementById('btnOver').addEventListener('click', function () {
             guessRandom = Math.round(Math.random()*3);
             (guessRandom === 0) ? guessPhrase = `Вы загадали число ${answerNumWord}?`: 
             (guessRandom === 1) ? guessPhrase = `Я уверен, это ${answerNumWord}?`: 
-            (guessRandom === 1) ? guessPhrase = `Я знаю! Это ${answerNumWord}?!`:
+            (guessRandom === 2) ? guessPhrase = `Я знаю! Это ${answerNumWord}?!`:
             guessPhrase = `Я думаю, это ${answerNumWord}?`;
             answerField.innerText = guessPhrase;
         }
