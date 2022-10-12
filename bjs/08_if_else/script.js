@@ -15,14 +15,17 @@ const a = ['ноль', 'один', 'два', 'три', 'четыре', 'пять
 
 const minFieldElement = document.querySelector('#minField');
 const maxFieldElement = document.querySelector('#maxField');
+const gameDesc = document.querySelector('#gameDescription');
 
 minFieldElement.addEventListener('input', function() {
     (isNaN(minFieldElement.value)) ? minValue = 0 : minValue = parseInt(minFieldElement.value);
+    gameDesc.innerText = 'Загадайте любое целое число от ' + minValue + ' до ' + maxValue + ', а я его угадаю'
     console.log(minValue);
 });
 
 maxFieldElement.addEventListener('input', function() {
     (isNaN(maxFieldElement.value)) ? maxValue = 100 : maxValue = parseInt(maxFieldElement.value);
+    gameDesc.innerText = 'Загадайте любое целое число от ' + minValue + ' до ' + maxValue + ', а я его угадаю'
     console.log(maxValue);
 });
 
